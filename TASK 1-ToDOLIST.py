@@ -15,7 +15,7 @@ class ToDoApp:
         todo.task_entry = tk.Entry(root, font=("Lucida Console",15), width=40,highlightbackground="Black",highlightcolor="Aqua",fg="White",background="#36454F",)
         todo.task_entry.pack(pady=10)
         
-        todo.add_button = tk.Button(root, text="Add Task", font=("Comic Sans MS",15), command=todo.add_task,background="#28282B",highlightbackground="Black",fg="White")
+        todo.add_button = tk.Button(root, text="Add Task",cursor='hand2', font=("Comic Sans MS",15), command=todo.add_task,background="#28282B",highlightbackground="Black",fg="White")
         todo.add_button.pack()
 
         todo.task_listbox = tk.Listbox(root, font=("Lucida Console",15), width=50, height=10,highlightbackground="Black",highlightcolor="#1F51FF",background="#36454F",fg="White")
@@ -24,13 +24,13 @@ class ToDoApp:
         button_frame = tk.Frame(root, background="#353935")
         button_frame.pack()
 
-        todo.complete_button = tk.Button(button_frame, text="Mark as Completed", font=("Comic Sans MS",15), command=todo.mark_completed,background="#28282B",fg="White")
+        todo.complete_button = tk.Button(button_frame, text="Mark as Completed", cursor='hand2',font=("Comic Sans MS",15), command=todo.mark_completed,background="#28282B",fg="White")
         todo.complete_button.pack(side=tk.LEFT, padx=5, pady=5)
 
-        todo.edit_button = tk.Button(button_frame, text="Edit Task", font=("Comic Sans MS",15), command=todo.edit_task,background="#28282B",fg="White")
+        todo.edit_button = tk.Button(button_frame, text="Edit Task", font=("Comic Sans MS",15), cursor='hand2',command=todo.edit_task,background="#28282B",fg="White")
         todo.edit_button.pack(side=tk.LEFT, padx=5,pady=5)
         
-        todo.delete_button = tk.Button(button_frame, text="Delete Task", font=("Comic Sans MS",15), command=todo.delete_task,background="#28282B",fg="White")
+        todo.delete_button = tk.Button(button_frame, text="Delete Task", font=("Comic Sans MS",15),cursor='hand2', command=todo.delete_task,background="#28282B",fg="White")
         todo.delete_button.pack(side=tk.LEFT, padx=5,pady=9)
         
         
